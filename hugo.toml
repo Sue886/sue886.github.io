@@ -9,15 +9,15 @@ pagerSize = 10
 [params]
 env = "production"
 title = "Zhl's Blog"
-description = "生活 · 技术 · 人工智能学习"
+description = "ME"
 keywords = ["Blog", "ML", "Life", "AI"]
 author = "Zh"
 
-# 主题外观
+# Outlook of the theme
 defaultTheme = "auto"
 disableThemeToggle = false
 
-# 文章功能
+# functions of blog
 ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
@@ -26,46 +26,46 @@ ShowCodeCopyButtons = true
 ShowToc = true
 math = true
 
-# 首页欢迎区域
+# first page
 homeInfoParams = { 
-  Title = "欢迎来到 Zhl's Blog 👋", 
-  Content = "一个记录生活、技术与思考的地方。" 
+  Title = "welcome to Zhl's Blog 👋", 
+  Content = "It's myblog" 
 }
 
-# 首页卡片布局
+# assign parts
 [params.homepage]
 showCards = true
 cardsLayout = "grid"
 showCategories = true
 showTags = true
 
-# 字体美化
+# word
 fontSans = "Inter, Helvetica, Arial, sans-serif"
 fontMono = "Fira Code, monospace"
 
-# 搜索
+# search
 disableSearch = false
 
-# 文章封面
+# the book of blog 
 ShowPostCover = true
 ShowCover = true
 cover = { hiddenInSingle = false, hiddenInList = false }
 
-# 顶部导航栏
+# search line
 [menu]
 [[menu.main]]
 identifier = "tech"
-name = "技术"
+name = "tech"
 url = "/tech/"
 weight = 1
 
 [[menu.main]]
 identifier = "life"
-name = "生活"
+name = "life"
 url = "/life/"
 weight = 2
 
-# 代码高亮方案
+# code light
 [markup]
 [markup.highlight]
 noClasses = false
@@ -74,7 +74,7 @@ style = "monokai"
 [markup.goldmark.renderer]
 unsafe = true
 
-# 社交图标
+# communicate
 [params.socialIcons]
 [[params.socialIcons]]
 name = "github"
@@ -84,7 +84,7 @@ url = "https://github.com/sue886"
 name = "rss"
 url = "/index.xml"
 
-# 部署配置
+
 [deployment]
 order = [".jpg", ".png", ".gif", ".css", ".js"]
 
