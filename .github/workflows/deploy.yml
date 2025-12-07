@@ -34,7 +34,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
         publish_branch: gh-pages
-        remote_name: blog           # 如果你的远程仓库名不是 origin
+        force_orphan: true
         user_name: "Sue886"
         user_email: "2174874197@qq.com"
-        force_orphan: true          # 如果 gh-pages 分支第一次部署不存在
