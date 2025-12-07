@@ -11,28 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # 1️ 签出仓库代码
+    # 1. Checkout repository
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
         submodules: true
 
-    # 2️ 安装 Hugo
+    # 2. Setup Hugo
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
 
-    # 3️ 构建 Hugo 网站
+    # 3. Build Hugo site
     - name: Build Hugo site
       run: hugo --minify
 
-    # 4 部署到 GitHub Pages（gh-pages 分支）
+    # 4. Deploy to GitHub Pages (gh-pages branch)
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-        publish_branch: gh-pages       # 修改这里为 gh-pages
+        publish_branch: gh-pages
+        remote_name: blog           # 如果你的远程仓库名不是 origin
         user_name: "Sue886"
         user_email: "2174874197@qq.com"
+        force_orphan: true          # 如果 gh-pages 分支第一次部署不存在
