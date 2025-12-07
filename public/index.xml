@@ -1,26 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Zhao&#39;s Blog</title>
-    <link>https://sue886.github.io/</link>
-    <description>Recent content on Zhao&#39;s Blog</description>
-    <generator>Hugo -- 0.152.2</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jan 2025 12:00:00 +0800</lastBuildDate>
-    <atom:link href="https://sue886.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>PINN 训练记录</title>
-      <link>https://sue886.github.io/tech/1/</link>
-      <pubDate>Wed, 01 Jan 2025 12:00:00 +0800</pubDate>
-      <guid>https://sue886.github.io/tech/1/</guid>
-      <description>&lt;p&gt;PINN 的损失函数由数据项和 PDE 残差项组成：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Zhl's Blog</title><link>https://sue886.github.io/</link><description>Recent content on Zhl's Blog</description><generator>Hugo -- 0.152.2</generator><language>zh-cn</language><atom:link href="https://sue886.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://sue886.github.io/tech/1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sue886.github.io/tech/1/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;title: &lt;span class="s2"&gt;&amp;#34;生活小记&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;date: 2025-12-07
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;categories: &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;生活&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;tags: &lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;日常&amp;#34;&lt;/span&gt;,&lt;span class="s2"&gt;&amp;#34;思考&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;draft: &lt;span class="nb"&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;author: &lt;span class="s2"&gt;&amp;#34;Zhao&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;description: &lt;span class="s2"&gt;&amp;#34;这是我记录生活的第一篇文章。&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;featuredImage: &lt;span class="s2"&gt;&amp;#34;/images/life1.jpg&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;showReadingTime: &lt;span class="nb"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;math: &lt;span class="nb"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;PINN 的损失函数由数据项和 PDE 残差项组成：&lt;/p&gt;
 &lt;p&gt;$$
 \mathcal{L} = \lambda_1 L_{\text{data}} + \lambda_2 L_{\text{PDE}}
-$$&lt;/p&gt;
-&lt;p&gt;示例代码：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loss &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; lambda1 &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; data_loss &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; lambda2 &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; pde_loss
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;loss&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;backward()
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-    </item>
-  </channel>
-</rss>
+$$&lt;/p&gt;</description></item></channel></rss>

@@ -3,55 +3,16 @@ languageCode = "zh-cn"
 title = "Zhl's Blog"
 theme = "PaperMod"
 
-[pagination]
-pagerSize = 10
-
 [params]
-env = "production"
-title = "Zhl's Blog"
+# 基本信息
+author = "Zh"
 description = "ME"
 keywords = ["Blog", "ML", "Life", "AI"]
-author = "Zh"
 
-# Outlook of the theme
-defaultTheme = "auto"
-disableThemeToggle = false
+# 首页信息
+homeInfoParams_title = "welcome to Zhl's Blog"
+homeInfoParams_content = "It's myblog"
 
-# functions of blog
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = true
-ShowToc = true
-math = true
-
-# first page
-homeInfoParams = { 
-  Title = "welcome to Zhl's Blog 👋", 
-  Content = "It's myblog" 
-}
-
-# assign parts
-[params.homepage]
-showCards = true
-cardsLayout = "grid"
-showCategories = true
-showTags = true
-
-# word
-fontSans = "Inter, Helvetica, Arial, sans-serif"
-fontMono = "Fira Code, monospace"
-
-# search
-disableSearch = false
-
-# the book of blog 
-ShowPostCover = true
-ShowCover = true
-cover = { hiddenInSingle = false, hiddenInList = false }
-
-# search line
 [menu]
 [[menu.main]]
 identifier = "tech"
@@ -65,7 +26,6 @@ name = "life"
 url = "/life/"
 weight = 2
 
-# code light
 [markup]
 [markup.highlight]
 noClasses = false
@@ -74,8 +34,6 @@ style = "monokai"
 [markup.goldmark.renderer]
 unsafe = true
 
-# communicate
-[params.socialIcons]
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/sue886"
@@ -84,11 +42,10 @@ url = "https://github.com/sue886"
 name = "rss"
 url = "/index.xml"
 
-
 [deployment]
 order = [".jpg", ".png", ".gif", ".css", ".js"]
 
 [[deployment.targets]]
 name = "github"
-URL = "git@github.com:Sue886/sue886.github.io.git"
+url = "git@github.com:Sue886/sue886.github.io.git"
 branch = "main"
