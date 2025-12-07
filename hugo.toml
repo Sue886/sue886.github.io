@@ -4,14 +4,14 @@ title = "Zhl's Blog"
 theme = "PaperMod"
 
 [params]
-# 基本信息
 author = "Zh"
 description = "ME"
 keywords = ["Blog", "ML", "Life", "AI"]
 
-# 首页信息
 homeInfoParams_title = "welcome to Zhl's Blog"
 homeInfoParams_content = "It's myblog"
+
+customCSS = ["css/custom.css"]
 
 [menu]
 [[menu.main]]

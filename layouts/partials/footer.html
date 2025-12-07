@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="container">
+    <p>© {{ now.Format "2006" }} {{ .Site.Params.author }}. All rights reserved.</p>
+    <div class="social-links">
+      {{ range .Site.Params.socialIcons }}
+        <a href="{{ .url }}" target="_blank">{{ .name | title }}</a>
+      {{ end }}
+    </div>
+  </div>
+</footer>

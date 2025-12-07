@@ -1,0 +1,10 @@
+<article class="post-card">
+  <a href="{{ .RelPermalink }}">
+    {{ with .Params.thumbnail }}
+      <img src="{{ . }}" alt="{{ $.Title }}" class="post-thumbnail"/>
+    {{ end }}
+    <h3>{{ .Title }}</h3>
+    <p>{{ .Summary | plainify | truncate 120 }}</p>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+  </a>
+</article>

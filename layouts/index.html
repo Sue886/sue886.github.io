@@ -1,0 +1,28 @@
+{{ define "main" }}
+<!-- 顶部 Banner -->
+<section class="banner">
+  <h1>{{ .Site.Params.homeInfoParams_title }}</h1>
+  <p>{{ .Site.Params.homeInfoParams_content }}</p>
+</section>
+
+<!-- 最新文章 -->
+<section class="latest-posts">
+  <h2>最新文章</h2>
+  <div class="posts-grid">
+    {{ $pages := where .Site.RegularPages "Type" "in" (slice "tech" "life") }}
+    {{ range first 6 (sort $pages "Date" "desc") }}
+      {{ partial "post-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+<!-- 分类入口 -->
+<section class="categories">
+  <h2>分类</h2>
+  <div class="category-grid">
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      <a href="{{ $taxonomy.Page.Permalink }}" class="category-card">{{ $name | title }}</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
