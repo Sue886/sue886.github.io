@@ -4,88 +4,91 @@ title = "Zhl's Blog"
 theme = "PaperMod"
 
 [pagination]
-  pagerSize = 10
+pagerSize = 10
 
 [params]
-  env = "production"
-  title = "Zhl's Blog"
-  description = "生活 · 技术 · 人工智能学习"
-  keywords = ["Blog", "ML", "Life", "AI"]
-  author = "Zh"
+env = "production"
+title = "Zhl's Blog"
+description = "生活 · 技术 · 人工智能学习"
+keywords = ["Blog", "ML", "Life", "AI"]
+author = "Zh"
 
-  # 主题外观
-  defaultTheme = "auto"     # auto / dark / light
-  disableThemeToggle = false
+# 主题外观
+defaultTheme = "auto"
+disableThemeToggle = false
 
-  # 文章功能
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
-  math = true
+# 文章功能
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+math = true
 
-  # 首页欢迎区域（推荐）
-  homeInfoParams = { 
-    Title = "欢迎来到 Zhao's Blog 👋", 
-    Content = "一个记录生活、技术与思考的地方。" 
-  }
+# 首页欢迎区域
+homeInfoParams = { 
+  Title = "欢迎来到 Zhl's Blog 👋", 
+  Content = "一个记录生活、技术与思考的地方。" 
+}
 
-  # 首页卡片布局（美观关键点）
-  [params.homepage]
-    showCards = true
-    cardsLayout = "grid"
-    showCategories = true
-    showTags = true
+# 首页卡片布局
+[params.homepage]
+showCards = true
+cardsLayout = "grid"
+showCategories = true
+showTags = true
 
-  # 字体美化
-  fontSans = "Inter, Helvetica, Arial, sans-serif"
-  fontMono = "Fira Code, monospace"
+# 字体美化
+fontSans = "Inter, Helvetica, Arial, sans-serif"
+fontMono = "Fira Code, monospace"
 
-  # 搜索
-  disableSearch = false
+# 搜索
+disableSearch = false
 
-  # 文章封面（非常美观）
-  ShowPostCover = true
-  ShowCover = true
-  cover = { hiddenInSingle = false, hiddenInList = false }
+# 文章封面
+ShowPostCover = true
+ShowCover = true
+cover = { hiddenInSingle = false, hiddenInList = false }
 
 # 顶部导航栏
 [menu]
-  [[menu.main]]
-    identifier = "tech"
-    name = "技术"
-    url = "/tech/"
-    weight = 1
+[[menu.main]]
+identifier = "tech"
+name = "技术"
+url = "/tech/"
+weight = 1
 
-  [[menu.main]]
-    identifier = "life"
-    name = "生活"
-    url = "/life/"
-    weight = 2
+[[menu.main]]
+identifier = "life"
+name = "生活"
+url = "/life/"
+weight = 2
 
-# 代码高亮方案（更现代）
+# 代码高亮方案
 [markup]
-  [markup.highlight]
-    noClasses = false
-    style = "monokai"      # 可替换：dracula / github / solarized-dark
+[markup.highlight]
+noClasses = false
+style = "monokai"
 
-  [markup.goldmark.renderer]
-    unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
 
-# 社交图标（顶部或底部显示）
+# 社交图标
 [params.socialIcons]
-  - name = "github"
-    url = "https://github.com/sue886"
-  - name = "rss"
-    url = "/index.xml"
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/sue886"
 
+[[params.socialIcons]]
+name = "rss"
+url = "/index.xml"
 
+# 部署配置
 [deployment]
-  order = [".jpg", ".png", ".gif", ".css", ".js"]
+order = [".jpg", ".png", ".gif", ".css", ".js"]
 
 [[deployment.targets]]
-  name = "github"
-  URL = "git@github.com:Sue886/sue886.github.io.git"
-  branch = "main"
+name = "github"
+URL = "git@github.com:Sue886/sue886.github.io.git"
+branch = "main"
