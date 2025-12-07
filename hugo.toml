@@ -80,3 +80,12 @@ theme = "PaperMod"
     url = "https://github.com/sue886"
   - name = "rss"
     url = "/index.xml"
+
+
+[deployment]
+  order = [".jpg", ".png", ".gif", ".css", ".js"]
+
+[[deployment.targets]]
+  name = "github"
+  URL = "git@github.com:用户名/仓库名.git"
+  branch = "main"
