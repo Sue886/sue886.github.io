@@ -1,6 +1,6 @@
 baseURL = "https://sue886.github.io/"
 languageCode = "zh-cn"
-title = "Zhao's Blog"
+title = "Zhl's Blog"
 theme = "PaperMod"
 
 [pagination]
@@ -8,10 +8,10 @@ theme = "PaperMod"
 
 [params]
   env = "production"
-  title = "Zhao's Blog"
+  title = "Zhl's Blog"
   description = "生活 · 技术 · 人工智能学习"
   keywords = ["Blog", "ML", "Life", "AI"]
-  author = "Zhao"
+  author = "Zh"
 
   # 主题外观
   defaultTheme = "auto"     # auto / dark / light
@@ -87,5 +87,5 @@ theme = "PaperMod"
 
 [[deployment.targets]]
   name = "github"
-  URL = "git@github.com:用户名/仓库名.git"
+  URL = "git@github.com:Sue886/sue886.github.io.git"
   branch = "main"
