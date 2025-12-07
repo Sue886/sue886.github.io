@@ -1,31 +1,39 @@
 name: Deploy Hugo Site
 
+# 触发条件：当 main 分支 push 或 PR 时
 on:
   push:
-    branches: [ master ]  # 改为 master
+    branches: [ main ]
   pull_request:
-    branches: [ master ]  # 改为 master
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
+    # 1️⃣ 签出仓库代码
+    - name: Checkout repository
+      uses: actions/checkout@v3
       with:
         submodules: true
-        
+
+    # 2️⃣ 安装 Hugo
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
-        
-    - name: Build
+
+    # 3️⃣ 构建 Hugo 网站
+    - name: Build Hugo site
       run: hugo --minify
-      
-    - name: Deploy
+
+    # 4️⃣ 部署到 GitHub Pages（main 分支）
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./public
-        publish_branch: gh-pages  # 明确指定部署到 gh-pages 分支
+        publish_branch: main   # 直接部署到 main 分支
+        user_name: "Sue886"
+        user_email: "2174874197@qq.com"
